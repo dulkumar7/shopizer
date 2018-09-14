@@ -1,0 +1,9 @@
+ applications:
+- name: eShop
+  path: target/ROOT.war
+  routes:
+   - route: eSope-demo-pipline-setup.cfapps.io
+  env:
+    WELCOME_MESSAGE: WELCOME TO eShop
+  services:
+    service: eShop-db
